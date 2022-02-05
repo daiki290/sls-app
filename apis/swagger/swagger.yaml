@@ -1,0 +1,23 @@
+swagger: "2.0"
+info:
+  description: "AWS SLS APP"
+  version: "1.0.0"
+  title: "SLS APP API"
+  termsOfService: "http://swagger.io/terms/"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+paths:
+  /hello:
+    get:
+      summary: "test method"
+      responses:
+        200:
+          description: "成功時のレスポンス"
+          schema:
+            type: "object"
+            properties:
+              message:
+                type: "string"
+              input:
+                type: "string"
